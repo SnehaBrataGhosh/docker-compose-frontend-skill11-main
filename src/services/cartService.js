@@ -5,9 +5,7 @@ const CART_API_URL = "http://localhost:30083/back1/api/cart";
 
 export const addToCart = async (userId, productId) => {
   return await axios.post(`${CART_API_URL}/add`, {
-    userId,
-    productId,
-    quantity: 1,
+    userId, productId, quantity: 1,
   });
 };
 
